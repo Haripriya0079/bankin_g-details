@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main() {
+    int basic_salary;
+    int HRA;
+    int DA;
+    int TAX;
+    int Gross_salary;
+    int Net_salary;
+
+    printf("Enter Basic Salary: ");
+    scanf("%d", &basic_salary);
+
+    printf("Enter HRA: ");
+    scanf("%d", &HRA);
+
+    printf("Enter DA: ");
+    scanf("%d", &DA);
+
+    printf("Enter TAX: ");
+    scanf("%d", &TAX);
+
+    Gross_salary = basic_salary + HRA + DA;
+    Net_salary = Gross_salary - TAX;
+
+    printf("\n----- Salary Summary -----\n");
+    printf("Basic Salary : %d\n", basic_salary);
+    printf("HRA          : %d\n", HRA);
+    printf("DA           : %d\n", DA);
+    printf("TAX          : %d\n", TAX);
+    printf("Gross Salary : $%d\n", Gross_salary);
+    printf("Net Salary   : $%d\n", Net_salary);
+
+    return 0;
+}
