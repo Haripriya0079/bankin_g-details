@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    char product_name[50];
+    printf("enter product name:");
+    scanf("%s",& product_name);
+    float price;
+    printf("enter price(in $):");
+    scanf("%f",&price);
+    float discount;
+    printf("enter discount:");
+    scanf("%f",&discount);
+    int stock;
+    printf("enter stock:");
+    scanf("%d",&stock);
+    printf("\n-----product details----\n");
+    printf("product : %s\n",product_name);
+    printf("price   :$%.2f\n",price);
+    printf("discount:%.2f%\n",discount);
+    printf("stock   :%d\n",stock);
+    return 0;
+}
